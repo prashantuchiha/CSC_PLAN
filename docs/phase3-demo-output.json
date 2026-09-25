@@ -1,0 +1,36 @@
+{
+  "synthetic": true,
+  "universities": [
+    "fa611cc6-444d-4690-a323-1a35c678e0b4",
+    "5ff2fd33-84d7-4891-ab63-19377a279f51"
+  ],
+  "professors": [
+    "727714f7-09b6-4648-84e1-5397664084d0",
+    "1253179c-222d-4831-8dee-fbc541ec4b5a"
+  ],
+  "official_source_id": "1e32d19f-0be0-47e9-8b03-b7ec7c1bd6f0",
+  "fake_fact_status": "UNVERIFIED",
+  "professor_context_publications": 1,
+  "university_context_professors": 1,
+  "mcp": {
+    "server_tools": 24,
+    "professor_context_name": "Wei Zhang",
+    "university_context_programs": 0,
+    "mcp_publication_id": "4c7dfe23-b80e-4808-9750-63617e002999",
+    "queued_job_ids": [
+      "2c970691-7ad3-4456-b1db-5409f3ef8831",
+      "b2943e5f-b6b1-4848-b354-52c9f06accbb"
+    ],
+    "note_path": "universities/synthetic-university-a-fa611cc6444d4690a3231a35c678e0b4/professors/wei-zhang-727714f709b6464884e15397664084d0/research/notes.md"
+  },
+  "persisted": {
+    "universities": 2,
+    "professors": 2,
+    "sources": 2,
+    "facts": 2,
+    "publications": 2,
+    "contacts": 1
+  },
+  "worker_status": "COMPLETED",
+  "worker_output": "COMPLETED"
+}

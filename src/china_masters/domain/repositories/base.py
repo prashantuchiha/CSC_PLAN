@@ -1,0 +1,13 @@
+from typing import Protocol, TypeVar
+from uuid import UUID
+
+from china_masters.domain.entities.base import Entity
+
+T = TypeVar("T", bound=Entity)
+
+
+class Repository(Protocol[T]):
+    def add(self, entity: T) -> None: ...
+    def get(self, entity_id: UUID) -> T | None: ...
+    def list(self, *, limit: int = 100, offset: int = 0) -> list[T]: ...
+    def save(self, entity: T) -> None: ...

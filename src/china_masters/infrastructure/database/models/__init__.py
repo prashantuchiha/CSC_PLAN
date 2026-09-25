@@ -1,0 +1,12 @@
+from .base import Base as Base
+from .contact_attempt import ContactAttemptRow as ContactAttemptRow
+from .email_record import EmailRecordRow as EmailRecordRow
+from .professor import ProfessorRow as ProfessorRow
+from .professor_contact import ProfessorContactRow as ProfessorContactRow
+from .program import ProgramRow as ProgramRow
+from .publication import PublicationRow as PublicationRow
+from .research_fact import ResearchFactRow as ResearchFactRow
+from .research_job import ResearchJobRow as ResearchJobRow
+from .source import SourceRow as SourceRow
+from .study_plan import StudyPlanRow as StudyPlanRow
+from .university import UniversityRow as UniversityRow

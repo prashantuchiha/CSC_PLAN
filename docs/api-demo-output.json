@@ -1,0 +1,135 @@
+{
+  "/health": {
+    "status": "ok",
+    "phase": "1"
+  },
+  "/universities": [
+    {
+      "id": "ddcbc421-e235-5150-916d-83a82481b873",
+      "canonical_name": "Demo University (synthetic)",
+      "chinese_name": null,
+      "abbreviation": null,
+      "city": null,
+      "province": null,
+      "official_website": null,
+      "international_admissions_url": null,
+      "notes": "Test fixture only; this is not verified real-world research.",
+      "created_at": "2026-09-25T15:03:37.092723Z",
+      "updated_at": "2026-09-25T15:03:37.092723Z"
+    }
+  ],
+  "/professors": [
+    {
+      "id": "017102b3-8919-59de-bbde-4b8e41324097",
+      "university_id": "ddcbc421-e235-5150-916d-83a82481b873",
+      "name_en": "Demo Professor Two",
+      "department": null,
+      "name_zh": null,
+      "title": null,
+      "official_profile_url": null,
+      "research_summary": null,
+      "status": "NEW",
+      "last_verified_at": null,
+      "created_at": "2026-09-25T15:03:37.173283Z",
+      "updated_at": "2026-09-25T15:03:37.173283Z"
+    },
+    {
+      "id": "d4bb9909-db06-51c2-8f02-72050158d86c",
+      "university_id": "ddcbc421-e235-5150-916d-83a82481b873",
+      "name_en": "Demo Professor One",
+      "department": null,
+      "name_zh": null,
+      "title": null,
+      "official_profile_url": null,
+      "research_summary": null,
+      "status": "NEW",
+      "last_verified_at": null,
+      "created_at": "2026-09-25T15:03:37.126439Z",
+      "updated_at": "2026-09-25T15:03:37.126439Z"
+    }
+  ],
+  "/research-facts": [
+    {
+      "id": "14c73b07-2c85-56bc-8413-ffa95a59a853",
+      "entity_type": "PROFESSOR",
+      "entity_id": "d4bb9909-db06-51c2-8f02-72050158d86c",
+      "field_name": "research_summary",
+      "value": "Synthetic machine learning research example",
+      "source_id": "59757e58-53c6-519c-8788-b26a76aa2731",
+      "verification_status": "VERIFIED_OFFICIAL",
+      "verified_at": "2026-09-25T15:03:37.213064Z",
+      "notes": "Synthetic verification fixture, not a factual claim."
+    }
+  ],
+  "/jobs": [
+    {
+      "id": "1f67f6b5-baed-4e49-be2d-d7fa8c8a1ea8",
+      "job_type": "PROFESSOR_RESEARCH",
+      "status": "QUEUED",
+      "priority": 0,
+      "entity_type": "PROFESSOR",
+      "entity_id": "d4bb9909-db06-51c2-8f02-72050158d86c",
+      "payload_json": {
+        "demo": true
+      },
+      "result_json": null,
+      "error_message": null,
+      "attempts": 0,
+      "created_at": "2026-09-25T15:03:37.230584Z",
+      "started_at": null,
+      "completed_at": null,
+      "revision": 0
+    },
+    {
+      "id": "5367dcd5-6194-45b8-8003-bb7a9f2130e9",
+      "job_type": "PROFESSOR_RESEARCH",
+      "status": "QUEUED",
+      "priority": 0,
+      "entity_type": "PROFESSOR",
+      "entity_id": "017102b3-8919-59de-bbde-4b8e41324097",
+      "payload_json": {
+        "demo": true
+      },
+      "result_json": null,
+      "error_message": null,
+      "attempts": 0,
+      "created_at": "2026-09-25T15:03:37.230584Z",
+      "started_at": null,
+      "completed_at": null,
+      "revision": 0
+    }
+  ],
+  "/openapi.json": {
+    "title": "China Masters Research OS",
+    "paths": [
+      "/health",
+      "/jobs",
+      "/jobs/{job_id}",
+      "/jobs/{job_id}/cancel",
+      "/jobs/{job_id}/transition",
+      "/professors",
+      "/professors/{professor_id}",
+      "/professors/{professor_id}/workspace",
+      "/research-facts",
+      "/sources",
+      "/sources/{source_id}",
+      "/universities",
+      "/universities/{university_id}",
+      "/universities/{university_id}/professors",
+      "/universities/{university_id}/workspace"
+    ]
+  },
+  "/sources/59757e58-53c6-519c-8788-b26a76aa2731": {
+    "id": "59757e58-53c6-519c-8788-b26a76aa2731",
+    "url": "https://example.invalid/synthetic-faculty-profile",
+    "source_type": "OFFICIAL_FACULTY",
+    "title": "Synthetic evidence fixture",
+    "publisher": null,
+    "domain": null,
+    "retrieved_at": "2026-09-25T15:03:37.203618Z",
+    "published_at": null,
+    "content_hash": null,
+    "local_snapshot_path": null,
+    "notes": "Demonstrates the verification workflow; not a real source."
+  }
+}

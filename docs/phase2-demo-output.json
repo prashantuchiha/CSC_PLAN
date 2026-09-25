@@ -1,0 +1,270 @@
+{
+  "university": {
+    "id": "bd09d33b-2fa0-443f-80e9-aeab33e77f95",
+    "canonical_name": "Phase 2 Demo University (synthetic)",
+    "chinese_name": null,
+    "abbreviation": null,
+    "city": null,
+    "province": null,
+    "official_website": null,
+    "international_admissions_url": null,
+    "notes": null,
+    "created_at": "2026-09-25 15:51:52.693642+00:00",
+    "updated_at": "2026-09-25 15:51:52.693642+00:00"
+  },
+  "professor": {
+    "id": "eb8823e9-0744-4f39-b53c-ee4e9650d15a",
+    "university_id": "bd09d33b-2fa0-443f-80e9-aeab33e77f95",
+    "name_en": "Phase 2 Demo Professor",
+    "department": null,
+    "name_zh": null,
+    "title": null,
+    "official_profile_url": null,
+    "research_summary": null,
+    "status": "NEW",
+    "last_verified_at": null,
+    "created_at": "2026-09-25 15:51:52.705642+00:00",
+    "updated_at": "2026-09-25 15:51:52.705642+00:00"
+  },
+  "research_queued": {
+    "id": "e08053c6-2499-4270-8c2b-5f6123483b92",
+    "job_type": "PROFESSOR_RESEARCH",
+    "status": "QUEUED",
+    "priority": 0,
+    "entity_type": "PROFESSOR",
+    "entity_id": "eb8823e9-0744-4f39-b53c-ee4e9650d15a",
+    "payload_json": {},
+    "result_json": null,
+    "error_message": null,
+    "attempts": 0,
+    "created_at": "2026-09-25 15:51:52.714504+00:00",
+    "started_at": null,
+    "completed_at": null,
+    "worker_id": null,
+    "lease_expires_at": null,
+    "next_attempt_at": null,
+    "revision": 0
+  },
+  "research_completed": {
+    "id": "e08053c6-2499-4270-8c2b-5f6123483b92",
+    "job_type": "PROFESSOR_RESEARCH",
+    "status": "COMPLETED",
+    "priority": 0,
+    "entity_type": "PROFESSOR",
+    "entity_id": "eb8823e9-0744-4f39-b53c-ee4e9650d15a",
+    "payload_json": {},
+    "result_json": {
+      "synthetic": true,
+      "candidate_facts": [
+        {
+          "entity_type": "PROFESSOR",
+          "entity_id": "eb8823e9-0744-4f39-b53c-ee4e9650d15a",
+          "field_name": "research_summary",
+          "value": "Synthetic research summary for Phase 2 Demo Professor",
+          "source_url": "https://example.invalid/professors/eb8823e907444f39b53cee4e9650d15a"
+        }
+      ],
+      "message": "Synthetic result; no external research performed"
+    },
+    "error_message": null,
+    "attempts": 1,
+    "created_at": "2026-09-25 15:51:52.714504+00:00",
+    "started_at": "2026-09-25 15:51:53.417036+00:00",
+    "completed_at": "2026-09-25 15:51:53.437338+00:00",
+    "worker_id": null,
+    "lease_expires_at": null,
+    "next_attempt_at": null,
+    "revision": 3
+  },
+  "retry_scheduled": {
+    "id": "065fadf1-543c-4085-b5c4-b9d9a539e3bf",
+    "job_type": "PROFESSOR_RESEARCH",
+    "status": "QUEUED",
+    "priority": 0,
+    "entity_type": "PROFESSOR",
+    "entity_id": "eb8823e9-0744-4f39-b53c-ee4e9650d15a",
+    "payload_json": {
+      "fail_until_attempt": 1
+    },
+    "result_json": null,
+    "error_message": "RuntimeError: Synthetic transient professor research failure",
+    "attempts": 1,
+    "created_at": "2026-09-25 15:51:53.566376+00:00",
+    "started_at": null,
+    "completed_at": null,
+    "worker_id": null,
+    "lease_expires_at": null,
+    "next_attempt_at": "2026-09-25 15:51:55.280007+00:00",
+    "revision": 3
+  },
+  "retry_completed": {
+    "id": "065fadf1-543c-4085-b5c4-b9d9a539e3bf",
+    "job_type": "PROFESSOR_RESEARCH",
+    "status": "COMPLETED",
+    "priority": 0,
+    "entity_type": "PROFESSOR",
+    "entity_id": "eb8823e9-0744-4f39-b53c-ee4e9650d15a",
+    "payload_json": {
+      "fail_until_attempt": 1
+    },
+    "result_json": {
+      "synthetic": true,
+      "candidate_facts": [
+        {
+          "entity_type": "PROFESSOR",
+          "entity_id": "eb8823e9-0744-4f39-b53c-ee4e9650d15a",
+          "field_name": "research_summary",
+          "value": "Synthetic research summary for Phase 2 Demo Professor",
+          "source_url": "https://example.invalid/professors/eb8823e907444f39b53cee4e9650d15a"
+        }
+      ],
+      "message": "Synthetic result; no external research performed"
+    },
+    "error_message": null,
+    "attempts": 2,
+    "created_at": "2026-09-25 15:51:53.566376+00:00",
+    "started_at": "2026-09-25 15:51:56.334485+00:00",
+    "completed_at": "2026-09-25 15:51:56.355166+00:00",
+    "worker_id": null,
+    "lease_expires_at": null,
+    "next_attempt_at": null,
+    "revision": 6
+  },
+  "waiting_for_review": {
+    "id": "71e9dad5-61b6-443d-a159-f97f33b7c149",
+    "job_type": "GENERAL_CSC_RESEARCH",
+    "status": "WAITING_FOR_REVIEW",
+    "priority": 0,
+    "entity_type": null,
+    "entity_id": null,
+    "payload_json": {
+      "review_required": true
+    },
+    "result_json": {
+      "synthetic": true,
+      "summary": "Synthetic CSC research fixture",
+      "topic": null,
+      "message": "Synthetic result; no external research performed"
+    },
+    "error_message": null,
+    "attempts": 1,
+    "created_at": "2026-09-25 15:51:56.475840+00:00",
+    "started_at": "2026-09-25 15:51:57.176902+00:00",
+    "completed_at": null,
+    "worker_id": null,
+    "lease_expires_at": null,
+    "next_attempt_at": null,
+    "revision": 3
+  },
+  "resumed": {
+    "id": "71e9dad5-61b6-443d-a159-f97f33b7c149",
+    "job_type": "GENERAL_CSC_RESEARCH",
+    "status": "QUEUED",
+    "priority": 0,
+    "entity_type": null,
+    "entity_id": null,
+    "payload_json": {
+      "review_required": true,
+      "review_approved": true
+    },
+    "result_json": null,
+    "error_message": null,
+    "attempts": 1,
+    "created_at": "2026-09-25 15:51:56.475840+00:00",
+    "started_at": null,
+    "completed_at": null,
+    "worker_id": null,
+    "lease_expires_at": null,
+    "next_attempt_at": null,
+    "revision": 4
+  },
+  "review_completed": {
+    "id": "71e9dad5-61b6-443d-a159-f97f33b7c149",
+    "job_type": "GENERAL_CSC_RESEARCH",
+    "status": "COMPLETED",
+    "priority": 0,
+    "entity_type": null,
+    "entity_id": null,
+    "payload_json": {
+      "review_required": true,
+      "review_approved": true
+    },
+    "result_json": {
+      "synthetic": true,
+      "summary": "Synthetic CSC research fixture",
+      "topic": null,
+      "message": "Synthetic result; no external research performed"
+    },
+    "error_message": null,
+    "attempts": 2,
+    "created_at": "2026-09-25 15:51:56.475840+00:00",
+    "started_at": "2026-09-25 15:51:58.002687+00:00",
+    "completed_at": "2026-09-25 15:51:58.019011+00:00",
+    "worker_id": null,
+    "lease_expires_at": null,
+    "next_attempt_at": null,
+    "revision": 7
+  },
+  "abandoned_claim": {
+    "id": "47cd5ec9-a1af-4a68-8200-8bac05306ba2",
+    "job_type": "GENERAL_CSC_RESEARCH",
+    "status": "RUNNING",
+    "priority": 0,
+    "entity_type": null,
+    "entity_id": null,
+    "payload_json": {},
+    "result_json": null,
+    "error_message": null,
+    "attempts": 1,
+    "created_at": "2026-09-25 15:51:58.134012+00:00",
+    "started_at": "2026-09-25 15:51:58.137783+00:00",
+    "completed_at": null,
+    "worker_id": "simulated-crashed-worker",
+    "lease_expires_at": "2026-09-25 15:52:00.137783+00:00",
+    "next_attempt_at": null,
+    "revision": 1
+  },
+  "lease_recovered": {
+    "id": "47cd5ec9-a1af-4a68-8200-8bac05306ba2",
+    "job_type": "GENERAL_CSC_RESEARCH",
+    "status": "QUEUED",
+    "priority": 0,
+    "entity_type": null,
+    "entity_id": null,
+    "payload_json": {},
+    "result_json": null,
+    "error_message": "Lease expired for worker simulated-crashed-worker",
+    "attempts": 1,
+    "created_at": "2026-09-25 15:51:58.134012+00:00",
+    "started_at": null,
+    "completed_at": null,
+    "worker_id": null,
+    "lease_expires_at": null,
+    "next_attempt_at": "2026-09-25 15:52:02.060300+00:00",
+    "revision": 2
+  },
+  "recovered_completed": {
+    "id": "47cd5ec9-a1af-4a68-8200-8bac05306ba2",
+    "job_type": "GENERAL_CSC_RESEARCH",
+    "status": "COMPLETED",
+    "priority": 0,
+    "entity_type": null,
+    "entity_id": null,
+    "payload_json": {},
+    "result_json": {
+      "synthetic": true,
+      "summary": "Synthetic CSC research fixture",
+      "topic": null,
+      "message": "Synthetic result; no external research performed"
+    },
+    "error_message": null,
+    "attempts": 2,
+    "created_at": "2026-09-25 15:51:58.134012+00:00",
+    "started_at": "2026-09-25 15:52:03.136824+00:00",
+    "completed_at": "2026-09-25 15:52:03.152570+00:00",
+    "worker_id": null,
+    "lease_expires_at": null,
+    "next_attempt_at": null,
+    "revision": 5
+  }
+}
